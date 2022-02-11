@@ -29,14 +29,15 @@ $(document).ready(function () {
     }
   });
 
-  $.ajax({
-    type: 'POST',
-    url: 'http://0.0.0.0:5001/api/v1/places_search',
-	contentType: "application/json",
-	data: "{}", 
-	dataType: 'json',
-	success: function (place) {	
-		console.log(place);
+  
+  $.('button').click(function name() {
+	  $.ajax({
+		  type: 'POST',
+		  url: 'http://0.0.0.0:5001/api/v1/places_search',
+		  contentType: "application/json",
+		  data: "{}",
+		  success: function (response) {
+			  }
 	}
-  });
+});
 });
