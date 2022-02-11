@@ -36,8 +36,8 @@ $(document).ready(function () {
 	data: "{}",
 	success: function (placesResponse) {
 		for (let placeItem of placesResponse) {
-			$( ´�<article>
-				<div class="title_box">
+				$( ´<article>
+					<div class="title_box">
 					<h2>$(placeItem.name)</h2>
 					<div class="price_by_night">$$(placeItem.price_by_night)</div>
 				</div>
